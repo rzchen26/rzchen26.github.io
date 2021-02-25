@@ -26,6 +26,9 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
+header{
+  display: inline-block;
+}
 
 body {
   line-height: 1; }
@@ -220,6 +223,19 @@ hr {
   hr.major {
     margin: 3em 0; }
 
+.crop_fssn{
+  overflow: hidden;
+}
+.crop_fssn img {
+  /* width: 400px;
+  height: 300px; */
+  margin: -6% 0 -9% -2%;
+}
+
+.container-95{
+  width:95%;
+  margin-left:2%;
+}
 .align-left {
   text-align: left; }
 
@@ -1001,7 +1017,7 @@ header p {
 header.major > :last-child {
   border-bottom: solid 3px #f56a6a;
   display: inline-block;
-  margin: 0 0 2em 0;
+  margin: 0 2em 2em 0;
   padding: 0 0.75em 0.5em 0; }
 
 header.main > :last-child {
@@ -1541,6 +1557,10 @@ button,
   button.small,
   .button.small {
     font-size: 0.6em; }
+    .button.xsmall {
+      font-size: 0.4em;
+      margin: 0 0 0 2em
+    }
   input[type="submit"].large,
   input[type="reset"].large,
   input[type="button"].large,
